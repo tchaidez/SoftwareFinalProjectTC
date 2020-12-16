@@ -43,7 +43,7 @@
     
    <p>
         Player 1:
-        <select id="Player1">
+        <select onclick="getPlayer()" id="Player1">
 
             <!-- Milwaukee Bucks -->
             <option value="Jrue_Holiday">Jrue Holiday</option>
@@ -226,11 +226,16 @@
 
     <script>
 
-        selectElement = document.querySelector('#Player1');
-        output = selectElement.value;
+        function getPlayer(){
 
-        document.querySelector('.output').textContent
+            selectElement = document.querySelector('#Player1');
+            output = selectElement.value;
+
+            document.querySelector('.output').textContent
             = output;
+        }
+
+        
 
     </script>
 
