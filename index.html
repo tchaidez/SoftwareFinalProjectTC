@@ -56,7 +56,7 @@
         <p style= "text-align:left;"><b> Player 1: </b></p>
 
         <p style= "text-align:left;">
-            <select onclick="getPlayer()" id="Player1">
+            <select onclick="getPlayer1()" id="Player1">
 
                 <!-- Milwaukee Bucks -->
                 <option value="Jrue_Holiday">Jrue Holiday</option>
@@ -274,10 +274,10 @@
 
     <div class= "secondPlayerSelection">
 
-        <p style= "text-align:right;"><b> Player 1: </b></p>
+        <p style= "text-align:right;"><b> Player 2: </b></p>
 
         <p style= "text-align:right;">
-            <select onclick="getPlayer()" id="Player1">
+            <select onclick="getPlayer()" id="Player2">
 
                 <!-- Milwaukee Bucks -->
                 <option value="Jrue_Holiday">Jrue Holiday</option>
@@ -497,19 +497,30 @@
 
     <p>
 
-    The value of what you selected is:
+    The value of player 1 is:
     <span class="output"></span>
+
+    The value of player 2 is:
+    <span class="output2"></span>
 
     </p>
 
     <script>
 
-        function getPlayer(){
+        function getPlayer1(){
 
             selectElement = document.querySelector('#Player1');
             output = selectElement.value;
 
             document.querySelector('.output').textContent = output;
+        }
+
+        function getPlayer2(){
+
+            selectElement = document.querySelector('#Player2');
+            output = selectElement.value;
+
+            document.querySelector('.output2').textContent = output2;
         }
 
         
