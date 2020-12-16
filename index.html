@@ -41,16 +41,200 @@
 
     <p style= "text-align: center;"><b> Please select a player from the selection list below: </b></p>
     
-    Player 1:
+   <p>
+        Player 1:
+        <select id="Player1">
 
-    <input type="text" name="Player1" id="Player1" list="list1" />
-    <datalist id="list1">
-        
-        <option value="blah1">
-        <option value="blah2">
-        <option value="blah3"> 
+            <!-- Milwaukee Bucks -->
+            <option value="Jrue_Holiday">Jrue Holiday</option>
+            <option value="Donte_DiVincenzo">Donte DiVincenzo</option>
+            <option value="Khris_Middleton">Khris Middleton</option>
+            <option value="Giannis_Antetokounmpo">Giannis Antetokounmpo</option>
+            <option value="Brook_Lopez">Brook Lopez</option>
+            
+            <!-- Toronto Raptors -->
+            <option value="Kyle_Lowry">Kyle Lowry</option>
+            <option value="Fred_VanVleet">Fred VanVleet</option>
+            <option value="OG_Anunoby">OG Anunoby</option>
+            <option value="Pascal_Siakam">Pascal Siakam</option>
+            <option value="Aron_Baynes">Aron Baynes</option>
 
-    </datalist>
+            <!-- Los Angeles Lakers -->
+            <option value="LeBron_James"> LeBron James</option>
+            <option value="Dennis_Schroder">Dennis Schroder</option>
+            <option value="Kentavious_Caldwell_Pope">Kentavious Caldwell Pope</option>
+            <option value="Anthony_Davis">Anthony Davis</option>
+            <option value="Marc_Gasol">Marc Gasol</option>
+            
+            <!-- LA Clippers -->
+            <option value="Patrick_Beverley">Patrick Beverley</option>
+            <option value="Paul_George">Paul George</option>
+            <option value="Kawhi_Leonard">Kawhi Leonard</option>
+            <option value="Marcus_Morris_Sr">Marcus Morris Sr</option>
+            <option value="Serge_Ibaka">Serge Ibaka</option>
+
+            <!-- Boston Celtics -->
+            <option value="Kemba_Walker">Kemba Walker</option>
+            <option value="Marcus_Smart">Marcus Smart</option>
+            <option value="Jaylen_Brown">Jaylen Brown</option>
+            <option value="Jayson_Tatum">Jayson Tatum</option>
+            <option value="Daniel_Theis">Daniel Theis</option>
+            
+            <!-- Denver Nuggets -->
+            <option value="Jamal_Murray">Jamal Murray</option>
+            <option value="Gary_Harris">Gary Harris</option>
+            <option value="Michael_Porter_Jr">Michael Porter Jr</option>
+            <option value="Paul_Millsap">Paul Millsap</option>
+            <option value="Nikola_Jokic">Nikola Jokic</option>
+            
+            <!-- Indiana Pacers 
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+            <option value=""
+
+            -->
+
+
+
+        </select>
+   </p>
+
+   <p>
+
+    The value of what you selected is:
+    <span class="output"></span>
+
+    </p>
+
+    <script>
+
+        selectElement = document.querySelector('#Player1');
+        output = selectElement.value;
+
+        document.querySelector('.output').textContent
+            = output;
+
+    </script>
+
+  
 
 
 
